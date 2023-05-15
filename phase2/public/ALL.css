@@ -9,7 +9,20 @@
   }
   /* header */
 
-  
+  #lang1,#lang2 {
+    background-color: #f44336;
+    color: white;
+    padding: 14px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 5px;
+  }
+
+  #Lang1,#lang2 {
+    background-color: rgb(248, 182, 75);
+  }
+
   header .head i{
     color: #FDA12B ;
     line-height: 1;
@@ -28,7 +41,7 @@
   }
 
   header .navbar{
-    padding:20px 30px;   
+    padding:20px 30px;
 }
 header .nav-item .nav-link{
   color: #7f8285;
@@ -39,7 +52,7 @@ header .nav-item .des{
 
 header .nav-item {
     margin-right: 40px;
-    
+
 }
 header .nav-item a{
     font-size: 16px;
@@ -48,7 +61,7 @@ header .nav-item a{
     text-transform: capitalize;
     transition: 0.5s;
     text-decoration: none;
-    
+
 }
 header .nav-item a:hover {
     color: #FDA12B !important;
@@ -69,7 +82,7 @@ header .latest::after{
     border: none ;
     padding: 3px 7px;
     border-radius: 10px;
-    color: white;  
+    color: white;
 }
 header .icons a{
     color: #444 ;
@@ -80,22 +93,22 @@ header{
 header .nav-item .item-list{
     top: 20px;
     left: -10px;
-    width: 160px;   
+    width: 160px;
     padding: 30px 15px;
     background-color: white;
     border-top: 3px solid #FDA12B;
     border-radius: 6px;
     opacity: 0;
-    visibility: hidden; 
-    position: absolute; 
-    list-style: none;  
+    visibility: hidden;
+    position: absolute;
+    list-style: none;
     transition: 0.5s all;
 
-    
+
 }
 header .nav-item .item-list a{
     color:black;
-    
+
 
 }
 header .nav-item .item-list li{
@@ -150,7 +163,7 @@ header .item-list::after{
 .welcome .info .contain{
   width: 80%;
   margin: auto;
-  
+
 }
 .welcome .contain h5{
   text-transform: uppercase;
@@ -204,7 +217,7 @@ header .item-list::after{
   height: 140vh;
   position: relative;
   margin: 80px 0;
-  
+
 }
 .service .box{
   position: absolute;
@@ -221,12 +234,12 @@ header .item-list::after{
   margin: auto;
   display: flex;
   justify-content: center;
-  
+
 }
 .service .box .container .info{
   color: white;
   margin-top: 80px;
-  
+
 }
 .service .box .container .info .txtHint{
   color: #f8f9fa;
@@ -280,9 +293,9 @@ header .item-list::after{
   background-image: linear-gradient(rgba(34, 33, 33, 0.863),rgba(0, 0, 0, 0.644)) ,url(imgs/carousel-2.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center;   
+  background-position: center;
   padding-bottom: 50px;
-  padding-bottom: 50px;  
+  padding-bottom: 50px;
 }
 
 form {
@@ -292,8 +305,8 @@ form {
   box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
   padding: 50px 50px  0 0 ;
   margin-top: -90px;
-  
-  
+
+
 }
 
 .title {
@@ -312,7 +325,7 @@ form div input {
   border: none;
   background-color: #182333;
   color: #f8f9fA;
-  
+
 
 }
 
@@ -320,27 +333,27 @@ label {
   display: block;
   color: #d2cdc6;
   margin-left: 23px;
-  
-  
+
+
 }
 form i{
   color: #d3ccc2;
   margin-left: -10px;
   margin-top: -5px;
-  
-  
+
+
 }
 
 form div {
   position: relative;
   margin-bottom: 7px;
-  
-  
+
+
 }
 
 input:focus {
   border: 2px solid #182333;
-  
+
 }
 
 /**
@@ -352,14 +365,14 @@ input:focus {
   flex-direction: row;
   justify-content: space-between;
   gap: 15px;
-  
+
 }
 
 
 span {
   color: #182333;
   cursor: pointer;
-  
+
 }
 
 /**
@@ -369,35 +382,35 @@ span {
 form div i {
   position: absolute;
   padding: 10px;
-  
+
 }
 
 .success-icon,
 .failure-icon {
   right: 0;
   opacity: 0;
-  
+
 }
 
  .failure-icon,
 form .error {
   color: red;
-  
-  
+
+
 }
 
  .success-icon {
   color: green;
-  
+
 }
 
 .error {
   font-size: 10.5px;
-  
+
 }
 
 /**
-* ! style rules for button 
+* ! style rules for button
 **/
 
 .bt {
@@ -412,13 +425,13 @@ form .error {
   cursor: pointer;
   box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
   transition: all 0.1s ease;
-  
+
 }
 
 .bt:hover {
   background-color: #f9b65f;
   transition: 1s;
-  
+
 }
 
 /**
@@ -462,7 +475,7 @@ form .error {
   }
   .contact-us .apex {
     width: 25%;
-  
+
   }
   .contact-us .apex  .head{
     display: flex;
@@ -486,13 +499,13 @@ form .error {
   }
   .contact-us .apex .icon {
     margin: 2rem 0;
-  
+
   }
   .contact-us .apex  p,
   .contact-us .news p{
     margin: 0.5rem 0;
-  
-  
+
+
     font-family: "Roboto",sans-serif;
     font-size: 1rem;
     font-weight: 400;
@@ -507,11 +520,11 @@ form .error {
     color: #FDA12B;
     text-align: center;
     transition: 0.7s;
-  
-  
+
+
   }
   .contact-us .apex .icon a{
-  
+
     margin-right: 0.5px;
     border: 1px solid #FDA12B;
     background-color: transparent;
@@ -556,7 +569,7 @@ form .error {
     font-weight: 900;
     color: #999999;
     margin-right: 10px;
-  
+
   }
   .contact-us .links {
     width: 25%;
@@ -568,13 +581,13 @@ form .error {
     text-decoration: none;
     color: #999999;
     margin-bottom: 0.5rem;
-  
+
   }
   .contact-us .links a{
     text-decoration: none;
     color: #999999;
     transition: 0.5s
-  
+
   }
   .contact-us .links a:hover{
     color: #f8f9fa;
@@ -602,7 +615,7 @@ form .error {
     font-weight: 600;
     line-height: 1;
     transition: 0.5s;
-  
+
   }
   .contact-us .news .mail .signup1 {
     background-color: transparent;
@@ -615,21 +628,20 @@ form .error {
     padding-top: 1rem;
     padding-bottom: 1rem;
     padding-left: 2rem;
-  
-  
+
+
   }
   .contact-us .news .mail .signup2:hover{
     background-color: #ffc107;
   }
   /* footer */
-  
 
 
 
 
-  
-  
 
- 
 
-  
+
+
+
+

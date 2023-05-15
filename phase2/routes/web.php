@@ -19,3 +19,10 @@ Route::get('/', function () {
 Route::get('/Confirmation', function () {
     return view('Confirmation');
 });
+Route::get('converter/{locale}',function($locale){
+    if(in_array($locale,['ar','en']))
+    {
+        session()->put('locale',$locale);
+    }
+        return redirect()->back();
+    })->name('converter');

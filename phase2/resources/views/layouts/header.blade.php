@@ -23,44 +23,44 @@
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav m-auto">
           <li class="nav-item active">
-            <a class="des nav-link" href="">home <span class="sr-only">(current)</span></a>
+            <a class="des nav-link" href="">{{__('msg.home')}} <span class="sr-only">(current)</span></a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">shop</a>
+            <a class="nav-link" href="#">{{__('msg.shop')}}</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">about</a>
+            <a class="nav-link" href="#">{{__('msg.about')}}</a>
           </li>
           <li class="nav-item latest">
 
-            <a class="nav-link hot" href="#">latest</a>
+            <a class="nav-link hot" href="#">{{__('msg.latest')}}</a>
 
 
             <ul class="item-list ">
-              <li><a href="#">Product List</a></li>
-              <li><a href="#">Product Details</a></li>
+              <li><a href="#">{{__('msg.Product List')}}</a></li>
+              <li><a href="#">{{__('msg.Product Details')}}</a></li>
             </ul>
 
           </li>
           <li class="nav-item items">
-            <a class="nav-link" href="#">blog</a>
+            <a class="nav-link" href="#">{{__('msg.blog')}}</a>
             <ul class="item-list">
-              <li><a href="#">Blog</a></li>
-              <li><a href="#">Blog Details</a></li>
+              <li><a href="#">{{__('msg.Blog')}}</a></li>
+              <li><a href="#">{{__('msg.Blog Details')}}</a></li>
             </ul>
           </li>
           <li class="nav-item items">
-            <a class="nav-link" href="#">pages</a>
+            <a class="nav-link" href="#">{{__('msg.pages')}}</a>
             <ul class="item-list">
-              <li><a href="#">Login</a></li>
-              <li><a href="#">Cart</a></li>
-              <li><a href="#">Element</a></li>
-              <li><a href="#">Confermation</a></li>
-              <li><a href="#">Product Checkout</a></li>
+              <li><a href="#">{{__('msg.Login')}}</a></li>
+              <li><a href="#">{{__('msg.Cart')}}</a></li>
+              <li><a href="#">{{__('msg.Element')}}</a></li>
+              <li><a href="#">{{__('msg.Confermation')}}</a></li>
+              <li><a href="#">{{__('msg.Product Checkout')}}</a></li>
             </ul>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">contact</a>
+            <a class="nav-link" href="#">{{__('msg.contact')}}</a>
           </li>
 
         </ul>
@@ -77,6 +77,8 @@
             </li>
           </ul>
         </div>
+        <a id="lang1" href="{{ route('converter','ar')}}"> عربي </a>
+        <a id="lang2" href="{{ route('converter','en')}}"> English </a>
 
       </div>
     </nav>
@@ -86,15 +88,15 @@
     <div class="overlay ">
       <div class="info">
         <div class="contain">
-          <h5>welcome to apex</h5>
-          <h1>A construction & Renovation Company</h1>
+          <h5>{{__('msg.welcome to apex')}}</h5>
+          <h1>{{__('msg.A construction & Renovation Company')}}</h1>
           <div class="items">
-            <p>Commercial</p>
-            <p><i class="fa-sharp fa-solid fa-circle"></i>Residential</p>
-            <p><i class="fa-sharp fa-solid fa-circle"></i>Industrial</p>
+            <p>{{__('msg.Commercial')}}</p>
+            <p><i class="fa-sharp fa-solid fa-circle"></i>{{__('msg.Residential')}}</p>
+            <p><i class="fa-sharp fa-solid fa-circle"></i>{{__('msg.Industrial')}}</p>
           </div>
           <div class="btn">
-            <button>More Details</button>
+            <button>{{__('msg.More Details')}}</button>
           </div>
 
         </div>
