@@ -73,7 +73,7 @@
             <i class="far fa-calendar-alt"></i>
             <label for="birthdate">{{__('msg.Birthdate')}}</label>
             <input type="text" placeholder="DD/MM/YYYY" onfocus="(this.type='date')" name="address" id="birthdate">
-            <button type="button" onclick="showHint()">{{__('msg.Check Actors')}}</button>
+            <button type="button" class="check_actors">{{__('msg.Check Actors')}}</button>
             <i class="fas fa-exclamation-circle failure-icon"></i>
             <i class="far fa-check-circle success-icon"></i>
             <div class="error"></div>
@@ -110,6 +110,44 @@
 
           <button class="bt" type="submit" id="submit" action="submit">{{__('msg.Get Appointment')}}</button>
           <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js">
+          </script>
+          <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+          <script>
+            $(document).ready(function(){
+                $(document).on('click','.check_actors',function (e){
+                    e.preventDefault();
+                      $.ajaxSetup({
+                          headers: {
+                              'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+                          }
+
+                      });
+                      var date = $("#birthdate").val();
+                      var res = "";
+                      res = date.split("-");
+                      if (res[1] == 0 && res[2] == 0) {
+                          $("#txtHint").html("");
+                          return;
+                      } else {
+                          $.ajax({
+                              url: "Actors",
+                              data: {
+                              q: res[2],
+                              s: res[1],
+                              },
+                              type: "GET",
+                              success: function (response) {
+                              $("#txtHint").html(response);
+                              },
+                          });
+                         
+                        
+                      }
+                  });
+
+              });
+
           </script>
         </form>
       </div>
