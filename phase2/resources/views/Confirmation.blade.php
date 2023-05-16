@@ -5,8 +5,8 @@
       <div class="container">
         <div class="info">
           <div class="head">
-            <h6>appointment</h6>
-            <h1>A Company Involved In Service And Maintenance</h1>
+            <h6>{{__('msg.appointment')}}</h6>
+            <h1>{{__('msg.A Company Involved In Service And Maintenance')}}</h1>
           </div>
           <p></p>
           <div>
@@ -18,16 +18,16 @@
         </div>
         <form id="form">
           <h4 style="color:Orange;font-size:90px">
-            <div class="hh">Registered<br></div>
+            <div class="hh">{{__('msg.Registered')}}<br></div>
             <div>
               <centre>
-                <p style="color:white;font-size:20px"> Thank you for Registering.</p>
+                <p style="color:white;font-size:20px"> {{__('msg.Thank you for Registering.')}}</p>
               </centre>
 
               <html>
 
               <head>
-                <title>ajax example</title>
+                <title>{{__('msg.ajax example')}}</title>
 
                 <!-- Optional theme -->
               </head>
@@ -45,10 +45,10 @@
                   <body>
                     <table>
                       <tr>
-                        <th style="color:Orange;font-size:30px">username</th>
-                        <th style="color:Orange;font-size:30px">fullname</th>
-                        <th style="color:Orange;font-size:30px">address</th>
-                        <th style="color:Orange;font-size:30px">phonenumber</th>
+                        <th style="color:Orange;font-size:30px">{{__('msg.username')}}</th>
+                        <th style="color:Orange;font-size:30px">{{__('msg.fullname')}}</th>
+                        <th style="color:Orange;font-size:30px">{{__('msg.address')}}</th>
+                        <th style="color:Orange;font-size:30px">{{__('msg.phonenumber')}}</th>
                       </tr>
 
                     </table>

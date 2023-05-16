@@ -55,6 +55,15 @@ return [
     '123 Street, New York, USA'=>'123 Street, New York, USA',
     'You'=>'You can find any thing you search about AJAX on facebook, youtube, twitter and linkedin. AJAX family always
     here to help you anytime and anywhere.',
-    'apex'=>'apex'
+    'apex'=>'apex',
+    'phonenumber'=>'phonenumber',
+    'address'=>'address',
+    'fullname'=>'fullname',
+    'username'=>'username',
+    'ajax example'=>'ajax example',
+    'Thank you for Registering.'=>'Thank you for Registering.',
+    'Registered'=>'Registered',
+    'A Company Involved In Service And Maintenance'=>'A Company Involved In Service And Maintenance',
+    
 
 ];
