@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-
+use App\Http\Controllers\DB_Ops_Controller;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -14,10 +14,12 @@ use Illuminate\Support\Facades\Route;
 */
 use App\Http\Controllers\ActorController;
 Route::get('Actors',[ActorController::class,"callapi"]);
-
 Route::get('/', function () {
     return view('index');
 });
+
+// Route::get('my-form', [DB_Ops_Controller::class, 'myform']);
+Route::post('/', [DB_Ops_Controller::class, 'myformPost'])->name('my.form');
 Route::get('/Confirmation', function () {
     return view('Confirmation');
 });
