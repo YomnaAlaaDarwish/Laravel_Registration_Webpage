@@ -1,0 +1,1 @@
+A new<h1> $username <h1> is registered to the system

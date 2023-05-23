@@ -1,4 +1,6 @@
 <?php
+use App\Mail\testMail;
+use Illuminate\Support\Facades\Mail;
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\DB_Ops_Controller;
@@ -13,6 +15,8 @@ use App\Http\Controllers\DB_Ops_Controller;
 |
 */
 use App\Http\Controllers\ActorController;
+use Illuminate\Support\Facades\Auth;
+
 Route::get('Actors',[ActorController::class,"callapi"]);
 Route::get('/', function () {
     return view('index');
@@ -20,8 +24,13 @@ Route::get('/', function () {
 
 // Route::get('my-form', [DB_Ops_Controller::class, 'myform']);
 Route::post('/', [DB_Ops_Controller::class, 'myformPost'])->name('my.form');
+Route::get('/send', function () {
+    Mail::to("maramashraf329@gmail.com")->send(new testMail());
+    return response('sending');
+    //return "hi";
+});
 Route::get('/Confirmation', function () {
-    return view('Confirmation');
+   return view('Confirmation');
 });
 Route::get('converter/{locale}',function($locale){
     if(in_array($locale,['ar','en']))
@@ -30,3 +39,8 @@ Route::get('converter/{locale}',function($locale){
     }
         return redirect()->back();
     })->name('converter');
+
+   Auth::routes([
+     'verify' => true
+
+   ]);
